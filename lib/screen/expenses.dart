@@ -83,11 +83,14 @@ class _ExpensesState extends State<Expenses> {
                 onPressed: _openAddExpenseOverlay, icon: const Icon(Icons.add)),
           ],
         ),
-        body: Column(
-          children: [
-            const Text("The Chart"),
-            Expanded(child: mainContent),
-          ],
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              const Text("The Chart"),
+              Expanded(child: mainContent),
+            ],
+          ),
         ));
   }
 }
